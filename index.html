@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Profile | Hamzah Hasan</title>
+
+    <link rel="icon" href="image/favicon.ico">
+    
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- css utama -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/7e092f1d1b.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <p>Personal Site</p>
+        </div>
+        <nav class="nav-list">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-me">About Me</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#certificate">Certificate</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <div class="headline">
+                <img src="image/headline1.PNG" alt="headline">
+                <img src="image/headline2.PNG" alt="headline">
+            </div>
+        </section>
+
+        <section id="about-me" class="about-me">
+            <div class="about-me-card">
+                <h2>About Me</h2>
+                <p>
+                    My name is Muhammad Hamzah Hasan an Informatic Engineering student in Lampung University 
+                    that interested in studying artificial intelligence and website programming. 
+                </p>
+                <button>More</button>
+            </div>
+            <aside>
+                <div class="about-me-img">
+                    <img src="image/hamzah.jpg" alt="Poto Hamzah" />
+                </div>
+            </aside>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="experience-description">
+                <h2>Experiences</h2>
+                <p>
+                    This is my work experience that has started since I was in university until now.
+                </p>
+            </div>
+            <div class="experience-card-container">
+                <article id="ERP 31">
+                    <div class="experience-card">
+                        <div class="experience-logo">
+                            <img src="image/logo-erp31.png" alt="">
+                        </div>
+                        <div class="experience-card-description">
+                            <h3>ERP 31</h3>
+                            <p>Lampung, Indonesia</p>
+                            <p>Jun 2023 - Des 2023 | 6 Months</p>
+                            <p>My Responsibilities :</p>
+                            <ul>
+                                <li>Developed and Customized Odoo Modules</li>
+                                <li>Identified and Fixed Errors in ERP31 Website</li>
+                                <li>Developed and Managed APIs</li>
+                                <li>Collaborated with Cross-Functional Teams</li>
+                            </ul>
+                        </div>
+                        <div class="experience-position">
+                            <p>Odoo Web Developer</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="coming-soon">
+                    <div class="experience-card">
+                        <div class="experience-logo">
+                            <img src="image/headline.PNG" alt="">
+                        </div>
+                        <div class="experience-card-description">
+                            <h3>Coming Soon</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>My Responsibilities :</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-position">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="certificate" class="certificate">
+            <h2>Certificate</h2>
+            <div class="certificate-carousel">
+                <div><img src="image/bangkit.jpg" alt="Certificate 1"></div>
+                <div><img src="image/coursera.jpg" alt="Certificate 2"></div>
+                <div><img src="image/orbit.jpg" alt="Certificate 3"></div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-card">
+                <form class="contact-form" action="https://formspree.io/f/mleqkopw" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+            
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+            
+                    <button type="submit">Send</button>
+                </form>
+                
+                <aside>
+                    <div class="add-inf">
+                      <ul>
+                        <li>
+                            &nbsp;<i class="fa-solid fa-location-dot"> | </i><span>Natar, Lampung Selatan</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"> | </i><span>089508628965</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"> | </i><span>hamzahhasan123@gmail.com</span>
+                        </li>
+                      </ul>
+                    </div>
+                </aside>
+            </div>  
+        </section>
+
+        <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-regular fa-circle-up"></i></i></button>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/hasan_v03/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/hamzah-hasan-a55670276/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a href="https://x.com/hmzh_hsn" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/hamzah.hasan.79" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+        <p>© 2024 ALL RIGHT RESERVED</p>
+        <p>CREATED BY <span id="hamzah">HAMZAH</span></p>
+    </footer>
+
+    <!-- js for carousel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.certificate-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.classList.add("show"); 
+            } else {
+                scrollToTopBtn.classList.remove("show");
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+</body>
+
+</html>

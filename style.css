@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color: #F1F6F9 ;
+    overflow-x: hidden;
+  }
+
+header.navbar-container {
+    width: 100%;
+    max-height: 35px;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #212A3E;
+    padding-block: 1rem;
+    position: fixed;
+    z-index: 3;
+}
+  
+header.navbar-container .logo p{
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #5AB2FF;
+}
+
+header.navbar-container .logo p:hover {
+    transform: scale(1.3);
+}
+  
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+  
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+  
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    background-color: #9BA4B5;
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    transition: all 0.3s ease-in-out;
+}
+  
+header.navbar-container .nav-list li:hover a {
+    background-color: #E1F7F5;
+}
+
+/* Main layout */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Home Section */
+.home {
+    padding-top: 40vh;
+    padding-bottom: 35vh;
+    text-align: center;
+    background-image: linear-gradient( 109.6deg,  rgb(204, 228, 247) 11.2%, rgba(237,246,250,1) 100.2% );
+    background-size: 200%;
+    animation: gradient-animation 10s infinite alternate;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.headline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.headline img { 
+    z-index: 2;
+    transition: all 0.2s ease;
+} 
+
+.headline img:hover {
+    cursor: pointer;;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+} 
+
+/* About Me Section */
+.about-me {
+    background: #394867;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 250px 10px;
+}
+
+.about-me-card {
+    max-width: 700px;
+    background-image: linear-gradient( 111.4deg,  #394867, #485e8a );   
+    border-radius: 10px; 
+    box-shadow: 0 2px 8px 2px #0c0c0c;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.about-me-card h2 {
+    margin-top: 0;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #5AB2FF;
+}
+
+.about-me-card p {
+    text-align: justify;
+    padding: 10px;
+    margin: 15px 0;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+
+.about-me-card button {
+    background-color:rgb(33, 42, 62, 0.4);
+	border-radius:28px;
+	border:1px solid whitesmoke;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 1.2rem;
+	padding:16px 31px;
+	text-decoration:none;
+    transition: background-color 0.3s;
+}
+
+.about-me-card button:hover {
+    background-color: #146C94;
+}
+
+.about-me-img img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    object-fit: cover; 
+    border-radius: 50%;
+    border: #F1F6F9;
+    border-style: solid;
+    box-shadow: 5px 5px 10px #5AB2FF;
+    border-width: 3px;
+}
+
+/* Experience Section */
+.experience {
+    padding: 20px;
+}
+
+.experience-description {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-description h2 {
+    text-align: center;
+    color: #394867;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #5AB2FF;
+}
+
+.experience-description p {
+    text-align: center;
+    color: #394867;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px #8eaeca;
+}
+
+.experience-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+.experience-card {
+    display: flex;
+    gap: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px 1px #5AB2FF;
+    border-radius: 15px;
+    padding: 20px 50px; 
+}
+
+.experience-logo img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    object-fit: cover; 
+    border-radius: 50%;
+    border: #F1F6F9;
+    border-style: solid;
+    box-shadow: 5px 5px 10px #5AB2FF;
+    border-width: 3px;
+    flex: 1;
+}
+
+.experience-card-description {  
+    flex: 3;
+}
+
+.experience-card-description h3{
+    margin: 0;
+    padding: 0;
+    color: #394867;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #5AB2FF;
+}
+
+.experience-card-description p{
+    font-size: 1.2rem;
+    color: #394867;
+    font-size: 1.5rem;
+}
+
+.experience-card-description li {
+    margin-bottom: 1.7rem;
+    font-size: 1.2rem;
+    color: #394867;
+}
+
+.experience-position {
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #394867;
+    text-shadow: 2px 2px 4px #5AB2FF;
+}
+
+/* Certificate Section */
+.certificate {
+    text-align: center;
+    padding: 50px 20rem;
+    background: #394867;
+}
+
+.certificate h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #5AB2FF;
+}
+
+.certificate-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate-carousel img {
+    max-height: 600px;
+    width: auto;
+    object-fit: cover;
+    margin: auto;
+}
+
+.slick-dots li button:before {
+    color: #fdfbfb;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #5AB2FF;
+}
+
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact h2 {
+    color: #394867;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #5AB2FF;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 50px 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #394867;
+}
+
+.contact-form input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+    width: 100%;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #5AB2FF;
+    box-shadow: 0 0 5px rgba(90, 178, 255, 0.5);
+    outline: none;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #5AB2FF;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-form button:hover {
+    background: #2B7BB9;
+}
+
+/* aside */
+.add-inf {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.add-inf ul {
+    list-style: none;
+    padding: 0;
+}
+
+.add-inf ul li {
+    margin-top: 1rem;
+    color: #394867;
+    display: flex;
+    align-items: center;
+}
+
+.add-inf ul li i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #5AB2FF;
+}
+
+/* footer */
+footer {
+    padding: 20px 200px;
+    color: #fff;
+    background-color: #394867;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline; 
+    margin-right: 10px; 
+}
+
+.social-media ul li:last-child {
+    margin-right: 0; 
+}
+
+.social-media ul li a {
+    color: #fff; 
+    font-size: 20px;
+    text-decoration: none; 
+}
+
+.social-media ul li a:hover {
+    color: #5AB2FF;
+}
+
+#hamzah {
+    color: #5AB2FF;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamzah:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #5AB2FF;
+}
+
+
+/* scroll to top button */
+#scrollToTopBtn {
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#scrollToTopBtn.show {
+    opacity: 1;
+}
+
+#scrollToTopBtn .fa-circle-up {
+    font-size: 50px;
+    color: #5AB2FF;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+#scrollToTopBtn:hover .fa-circle-up {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .nav-list ul {
+        gap: 0.2rem;
+    }
+    
+    header.navbar-container .nav-list li a {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .headline img {
+        transform: scale(0.9); 
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .about-me {
+        padding: 10rem 1rem;
+        gap: 2rem;
+    }
+
+    .about-me-img img {
+        width: 300px;
+        height: 300px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .experience-card {
+        padding: 15px; 
+    }
+
+    .certificate {
+        padding: 50px 5rem;
+    }
+
+    .certificate-carousel img {
+        max-height: 500px;
+        width: auto;
+    }
+
+    .contact-card {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 2rem 5rem;
+    }
+
+    .add-inf {
+        max-width: 100%;
+        padding: 1rem; 
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .add-inf ul li {
+        width: 100%;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    .social-media ul {
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        padding: 10px;
+    }
+
+    header.navbar-container .logo p{
+        font-size: 1rem;
+    }
+    
+    header .navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+    
+    header.navbar-container .nav-list li a {
+        font-size: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .headline img {
+        transform: scale(0.7); 
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .about-me {
+        flex-direction: column-reverse;
+    }
+
+    .about-me-card,
+    aside {
+        padding: 1rem;
+    }
+
+    .experience-card {
+        flex-direction: column;
+    }
+
+    .certificate {
+        padding: 2rem;
+    }
+
+    .certificate-carousel img {
+        max-height: 400px;
+        width: auto;
+    }
+
+    .contact-form {
+        padding: 20px 50px;
+    }
+    
+    .add-inf {
+        padding: 1rem;
+    }
+    
+    footer {
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px 100px;
+    }
+
+    .social-media ul {
+        gap: 0.5rem;
+    }
+}
